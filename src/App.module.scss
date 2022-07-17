@@ -1,0 +1,700 @@
+.app{
+  background: white;
+  display: flex;
+  padding: 48px 72px 100px 72px;
+  gap: 24px;
+}
+
+.image{
+  align-items: center;
+  justify-content: center;
+}
+.image img {
+  width: 416px;
+  height: 416px;
+}
+
+.infoBox{
+  max-width: 526px;
+  width: 100%;
+}
+
+.badges{
+  display: flex;
+}
+
+.badgesBtn1{
+  background-image: linear-gradient(270deg, #F5515F 0%, #FF7527 100%);
+  border-radius: 2px 0 0 2px;
+  border: none;
+  width: 90px;
+  height: 20px;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.badgesBtn2{
+  border: none;
+  background-color: #FFF0E6;
+  height: 20px;
+  color: #FF6600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  padding: 2px 8px 2px 8px;
+  display: flex;
+  align-items: center;
+
+}
+
+.badgesBtn2 img{
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.name{
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  //width: 526px;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  align-items: center;
+}
+
+.nameTag{
+  color: #999999;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  background-color: #EDF0F3;
+  border-radius: 2px;
+  width: 111px;
+  height: 20px;
+  padding:2px 8px;
+  margin-left: 5px;
+}
+
+.ratingBox{
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.ratingBoxStars{
+  display: flex;
+  align-items: center;
+  gap:4px;
+}
+
+.ratingBoxStars img{
+  width: 14px;
+  height: 14px;
+}
+
+.ratingBoxRating{
+  color: #FF6600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.ratingBoxCount{
+  color: #999999;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.ratingBoxBuyers{
+  color: #333333;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.priceBox{
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: inset 0 1px 0 0 #E6E7EB, inset 0 -1px 0 0 #E6E7EB;
+  width: 526px;
+  height: 64px;
+  &:hover{
+    &:before{
+      width: 100%;
+      background: rgba(red, 1)};
+    img{
+      transform: translateX(0)}
+    }
+
+  &:active{
+    transform: scale(.96)
+  }
+}
+
+
+.marchExpo{
+  display: flex;
+  background-color: #FFF0E6;
+  width: 526px;
+  height: 40px;
+  border:none;
+  align-items: center;
+  gap: 24px;
+  margin: 12px 0;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.marchExpoText {
+  display: flex;
+  color: #FF6600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  gap: 24px;
+
+}
+
+.marchExpo:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+                  120deg,
+                  transparent,
+                  rgb(255, 255, 255),
+                  transparent
+  );
+  transition: all 650ms;
+}
+
+.marchExpo:hover:before {
+  left: 100%;
+}
+
+.marchExpoText img{
+  width: 8px;
+  height: 14px;
+  margin-left:1px;
+}
+
+.marchExpoImg{
+  width: 76px;
+  height: 40px;
+}
+
+.countdownTimer{
+  display: flex;
+  margin: 24px 0;
+  gap:24px;
+}
+
+.countdownTimerDiscount{
+  color: #FF6600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  padding-right: 4px;
+}
+
+.countdownTimerText{
+  display: flex;
+  align-items: center;
+
+}
+
+.countdownTimerExplanation{
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.countdownTimerTime{
+  display: flex;
+  align-items: center;
+  gap:12px;
+  color: #999999;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.products{
+  max-height: 144px;
+  height: 100%;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.tradeAssurance{
+  display: flex;
+  gap:5px;
+  cursor: pointer;
+}
+
+.tradeAssuranceBold{
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tradeAssuranceSmall{
+  color: #999999;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.tradeAssuranceText{
+  display: flex;
+  align-items: center;
+}
+
+.payments{
+  display: flex;
+  gap: 4px;
+  margin: 12px 0;
+  align-items: center;
+}
+
+.paymentsText{
+  color: #999999;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.paymentsIcon{
+  width:auto;
+  height: 12px;
+}
+
+.links{
+  display: flex;
+  gap: 24px;
+  color: #999999;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.linkFirst, .linkSecond{
+  cursor: pointer;
+}
+
+.addToBox{
+  width: 306px;
+  max-height: 256px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+  padding:28px  24px 24px 24px;
+}
+
+.addToBoxShippingCountry{
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.addToBoxShippingCountryText{
+  color: #999999;
+  overflow: hidden;
+  white-space: inherit;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  max-width: 132px;
+  line-height: 16px;
+  height: 32px;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  margin-right: 48px;
+  font-size: 14px;
+}
+
+.addToBoxShippingCountryTextUnderline{
+  text-decoration: underline;
+}
+
+.addToBoxShippingCountryPrice{
+  color: #333333;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.addToBoxShippingLeadTime{
+  display: grid;
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.addToBoxButtons{
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+  width: auto;
+  height: 40px;
+}
+
+.addToBoxShippingTextContainerBold{
+  font-weight: bold;
+}
+
+.addToBoxButtonLogIn{
+  background-color: #FF6600;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 40px;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  &:hover{
+    background-color: #FF3D00;
+  }
+}
+
+.addToBoxButtonContact{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #FF6600;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 40px;
+  color:  #FF6600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  align-items: center;
+  &:hover{
+    background-color: #FFF0E6;
+  }
+}
+
+.addToBoxButtonContact img{
+  margin-right: 12px;
+  width: 14px;
+  height: 12px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltipText {
+  visibility: hidden;
+  width: 160px;
+  height: auto;
+  background-color: rgba(255, 117, 39, 0.44);
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.tooltip:hover .tooltipText {
+  visibility: visible;
+}
+
+.addToBoxShippingTextContainer{
+  display: flex;
+  gap: 12px;
+}
+
+.priceBoxFirstRow{
+  display: flex;
+  gap: 12px;
+  padding-top: 12px;
+}
+
+.priceBoxSecondRow{
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  text-decoration: line-through;
+}
+
+.priceBoxFirstRowPrice{
+  color: #FF6600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.priceBoxFirstRowOptionOrder{
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.priceBoxFirstRowOptionLine{
+  color: #EDF0F3;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.priceBoxFirstRowOptions{
+  color: #333333;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.productsHeader{
+  color: #999999;
+  font-size: 14px;
+  line-height: 16px;
+  width: 112px;
+  text-align: left;
+  padding: 10px 0;
+
+}
+
+.productsLabel{
+  color: #333333;
+  font-size: 14px;
+  line-height: 16px;
+  width: 174px;
+  text-align: left;
+}
+
+.productsInfo{
+  display: flex;
+  padding-bottom: 12px;
+  align-items: center;
+
+}
+
+
+
+.productsPrice{
+  color: #333333;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  padding-right: 24px;
+}
+
+
+
+.productsInfoLabelPrice{
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 360px) {
+  body{
+    background: #FFFFFF;
+  }
+ .app{
+   width: 360px;
+   height: 360px;
+   padding: 0;
+   margin: 0;
+   display: grid;
+   background: #FFFFFF;
+ }
+
+  .image{
+    max-width: 360px;
+    width: 100%;
+    order: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img{
+    width: 360px;
+    height: 360px;
+  }
+
+  .infoBox{
+    order: 1;
+    width: 360px;
+    padding:0 12px;
+  }
+
+  .badgesBtn1, .badgesBtn2 {
+    width: auto;
+    height: 20px;
+  }
+  .badgesBtn2 img{
+    width: 12px;
+    height: 12px;
+  }
+
+  .name{
+    width: 336px;
+  }
+
+  .nameTag{
+    margin-right: 0;
+    margin-left: 124px;
+  }
+
+  .priceBox{
+    width: 336px;
+    border-right: none;
+  }
+
+  .priceBoxFirstRow{
+    width: 336px;
+    display: flex;
+   justify-content: space-between;
+   }
+  .marchExpo{
+    width: 336px;
+  }
+  .marchExpoText{
+  display: flex;
+    gap: 45px;
+  }
+  .marchExpoTextSecond{
+    display: none;
+  }
+  .productsHeader{
+    display: none;
+  }
+  .productsList{
+    width: 336px;
+
+  }
+  .productsLabel{
+    width: 148px;
+  }
+  .productsPrice{
+    max-width: 56px;
+    padding: 0;
+  }
+  .productsButton{
+    width: 40px;
+  }
+  .productsInput{
+    width: 40px;
+  }
+  .addToBox{
+    order: 2;
+    padding: 12px;
+    width: 336px;
+    margin:12px
+  }
+  .addToBoxButtons{
+    width: 284px;
+  }
+  .addToBoxShippingCountry{
+    justify-content: space-between;
+  }
+
+}
+@media only screen and (max-width: 600px) {
+.app {
+  display: grid;
+  padding: 0;
+  gap: 12px;
+}
+  .image{
+    order: 0;
+  }
+
+  .image img {
+    width: 350px;
+    height: auto;
+  }
+
+  .infoBox{
+    order: 1;
+    padding: 12px;
+    width: 356px;
+  }
+
+  .name span{
+    width: 336px;
+  }
+
+  .priceBox{
+    width: 336px;
+  }
+
+  .marchExpo{
+    width: 336px;
+  }
+
+  .marchExpoTextSecond{
+   display: none;
+  }
+
+  .productsHeader{
+    display: none;
+  }
+
+  .productsList{
+    width: 336px;
+  }
+
+  .productsLabel{
+    width: 148px;
+  }
+
+  .productsPrice{
+    max-width: 56px;
+    padding: 0;
+  }
+
+  .productsButton{
+    width: 40px;
+  }
+
+  .productsInput{
+    width: 40px;
+  }
+
+  .addToBox{
+    order: 2;
+    padding: 24px 26px;
+    width: 336px;
+    margin:12px;
+    height: 256px;
+  }
+
+  .addToBoxButtons{
+    max-width: 324px;
+  }
+
+  .addToBoxShippingCountry{
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+
+
+}

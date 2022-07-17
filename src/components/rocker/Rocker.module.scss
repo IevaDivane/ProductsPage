@@ -1,0 +1,37 @@
+.productsButton{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #FF6600;
+  border-radius: 0 2px 2px 0;
+  width: 40px;
+  height: 40px;
+  color: #FF6600;
+  font-size: 24px;
+  cursor: pointer;
+  &:disabled{
+    border: 1px solid #999999;
+    pointer-events: none;
+    color: #999999;
+    cursor: none;
+  }
+}
+
+.productsInput{
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: inset 0 1px 0 0 #E6E7EB, inset 0 -1px 0 0 #E6E7EB;
+  width: 80px;
+  height: 40px;
+  border: none;
+  padding-top:6px;
+  text-align: center;
+}
+
+.productsInput::-webkit-outer-spin-button,
+.productsInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.productsButtons{
+  margin-left: auto;
+  margin-right: 0;
+}
