@@ -13,7 +13,7 @@ import applePay from './icons/apple_pay.svg';
 import envelope from './icons/envelope.png';
 import forward from './icons/forward.png';
 import Rocker from './components/rocker/Rocker';
-import Loader from "./components/loader/Loader";
+import Loader from './components/loader/Loader';
 
 const App = () => {
   const [errorMessage, setErrorMessage] = useState<string>('');
