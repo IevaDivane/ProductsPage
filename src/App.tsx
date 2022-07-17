@@ -13,12 +13,15 @@ import applePay from './icons/apple_pay.svg';
 import envelope from './icons/envelope.png';
 import forward from './icons/forward.png';
 import Rocker from './components/rocker/Rocker';
+import Loader from "./components/loader/Loader";
 
 const App = () => {
   const [errorMessage, setErrorMessage] = useState<string>('');
   const [products, setProducts] = useState<Product>();
+  const [loading, setLoading] = useState(false);
 
   const getProducts = async () => {
+    setLoading(true);
     try {
       const response = await axios.get('https://fe-assignment.vaimo.net/'); //
       setProducts(response.data.product);
@@ -29,6 +32,8 @@ const App = () => {
       } else {
         setErrorMessage('Not Axios Error');
       }
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -106,8 +111,6 @@ const App = () => {
     );
   });
 
-  // const inStock = products && products.props.fast_dispatch;
-
   const shippingCost = Number(products && products.shipping.method.cost.value);
 
   useEffect(() => {
@@ -123,20 +126,23 @@ const App = () => {
           </div>
           <div className={style.infoBox}>
             <div className={style.badges}>
+              {products.shipping.props.ready_to_ship && (
               <button className={style.badgesBtn1}>
                 Ready to Ship
               </button>
-              {/* <button className={style.badgesBtn1}> */}
-              {/*  Ready to Ship */}
-              {/* </button> */}
+              )}
+              {products.shipping.props.in_stock && (
               <button className={style.badgesBtn2}>
                 <img src={check} alt="check" />
                 In Stock
               </button>
+              )}
+              {products.shipping.props.fast_dispatch && (
               <button className={style.badgesBtn2}>
                 <img src={check} alt="check" />
                 Fast Dispatch
               </button>
+              )}
             </div>
             <div>
               <div className={style.name}>
@@ -305,10 +311,13 @@ const App = () => {
                 <span>
                   Lead time
                   {' '}
+                  <span className={style.addToBoxShippingTextContainerBold}>
+                    {products.shipping.lead_time.value}
+                  </span>
                 </span>
                 <div className={style.tooltip}>
                   &#x1F6C8;
-                  <span className={style.tooltipText}>lead time info</span>
+                  <span className={style.tooltipText}>{products.shipping.lead_time.info}</span>
                 </div>
               </div>
               <div className={style.addToBoxShippingTextContainer}>
@@ -336,6 +345,7 @@ const App = () => {
           </div>
         </div>
       )}
+      {loading && <Loader />}
       {errorMessage && (
         <div>
           <span>{errorMessage}</span>

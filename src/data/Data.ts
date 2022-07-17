@@ -10,12 +10,6 @@ export type Product = {
     discount:ProductDiscount;
     gallery:ProductGallery[];
     shipping:ProductShipping;
-    // eslint-disable-next-line camelcase
-    lead_time: {
-        'value': string,
-        'info': string
-    },
-    props:ProductProps;
     reviews:ProductReviews;
 }
 
@@ -63,6 +57,12 @@ type ProductGallery = {
 
 type ProductShipping = {
     method:ShippingMethod;
+    // eslint-disable-next-line camelcase
+    lead_time: {
+        'value': string,
+        'info': string
+    },
+    props:ProductProps;
 }
 
 type ShippingMethod ={
@@ -87,12 +87,7 @@ type MethodCost = {
     }
 }
 
-type ProductLeadTime = {
-    value:string;
-    info: string
-}
-
-export type ProductProps = {
+type ProductProps = {
     // eslint-disable-next-line camelcase
     ready_to_ship:boolean;
     // eslint-disable-next-line camelcase

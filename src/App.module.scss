@@ -30,7 +30,6 @@
   width: 90px;
   height: 20px;
   color: #FFFFFF;
-  text-align: left;
 }
 
 .badgesBtn2{
@@ -38,7 +37,6 @@
   background-color: #FFF0E6;
   height: 20px;
   color: #FF6600;
-  text-align: left;
   padding: 2px 8px 2px 8px;
   display: flex;
   align-items: center;
@@ -54,7 +52,6 @@
 .name{
   font-size: 16px;
   line-height: 24px;
-  text-align: left;
   padding-top: 8px;
   padding-bottom: 12px;
   align-items: center;
@@ -62,9 +59,10 @@
 
 .nameTag{
   color: #999999;
-  text-align: left;
+
   background-color: #EDF0F3;
   border-radius: 2px;
+  font-size: 12px;
   width: 111px;
   height: 20px;
   padding:2px 8px;
@@ -90,16 +88,13 @@
 
 .ratingBoxRating{
   color: #FF6600;
-  text-align: left;
 }
 
 .ratingBoxCount{
   color: #999999;
-  text-align: left;
 }
 
 .ratingBoxBuyers{
-  text-align: left;
 }
 
 .priceBox{
@@ -139,7 +134,6 @@
   display: flex;
   color: #FF6600;
   font-size: 14px;
-  text-align: left;
   gap: 24px;
 
 }
@@ -179,12 +173,12 @@
   display: flex;
   margin: 24px 0;
   gap:24px;
+  font-style: italic;
 }
 
 .countdownTimerDiscount{
   color: #FF6600;
   font-size: 14px;
-  text-align: left;
   padding-right: 4px;
 }
 
@@ -197,7 +191,6 @@
 .countdownTimerExplanation{
   color: #999999;
   font-size: 14px;
-  text-align: left;
 }
 
 .countdownTimerTime{
@@ -207,7 +200,6 @@
   color: #999999;
   font-size: 16px;
   line-height: 24px;
-  text-align: left;
 }
 
 .products{
@@ -226,13 +218,11 @@
 .tradeAssuranceBold{
   color: #999999;
   font-size: 14px;
-  text-align: left;
   font-weight: bold;
 }
 
 .tradeAssuranceSmall{
   color: #999999;
-  text-align: left;
   padding-left: 5px;
 }
 
@@ -250,7 +240,6 @@
 
 .paymentsText{
   color: #999999;
-  text-align: left;
 }
 
 .paymentsIcon{
@@ -262,7 +251,6 @@
   display: flex;
   gap: 24px;
   color: #999999;
-  text-align: left;
 }
 
 .linkFirst, .linkSecond{
@@ -312,7 +300,6 @@
   display: grid;
   color: #999999;
   font-size: 14px;
-  text-align: left;
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -403,7 +390,6 @@
 .priceBoxSecondRow{
   color: #999999;
   font-size: 14px;
-  text-align: left;
   text-decoration: line-through;
 }
 
@@ -411,34 +397,29 @@
   color: #FF6600;
   font-size: 16px;
   line-height: 24px;
-  text-align: left;
   font-weight: bold;
 }
 
 .priceBoxFirstRowOptionOrder{
   color: #999999;
   font-size: 14px;
-  text-align: left;
 }
 
 .priceBoxFirstRowOptionLine{
   color: #EDF0F3;
   font-size: 14px;
-  text-align: left;
   padding-right: 6px;
   padding-left: 6px;
 }
 
 .priceBoxFirstRowOptions{
   font-size: 14px;
-  text-align: left;
 }
 
 .productsHeader{
   color: #999999;
   font-size: 14px;
   width: 112px;
-  text-align: left;
   padding: 10px 0;
 
 }
@@ -446,7 +427,6 @@
 .productsLabel{
   font-size: 14px;
   width: 174px;
-  text-align: left;
 }
 
 .productsInfo{
@@ -457,7 +437,6 @@
 
 .productsPrice{
   font-size: 14px;
-  text-align: left;
   padding-right: 24px;
 }
 
@@ -572,17 +551,19 @@
 
 }
 @media only screen and (max-width: 600px) {
+
 .app {
   display: grid;
   padding: 0;
   gap: 12px;
 }
+
   .image{
     order: 0;
   }
 
   .image img {
-    width: 350px;
+    width: 360px;
     height: auto;
   }
 
@@ -623,14 +604,6 @@
   .productsPrice{
     max-width: 56px;
     padding: 0;
-  }
-
-  .productsButton{
-    width: 40px;
-  }
-
-  .productsInput{
-    width: 40px;
   }
 
   .addToBox{

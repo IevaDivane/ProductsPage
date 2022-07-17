@@ -21,7 +21,7 @@
   width: 80px;
   height: 40px;
   border: none;
-  padding-top:6px;
+  padding-top:10px;
   text-align: center;
 }
 
@@ -34,4 +34,14 @@
 .productsButtons{
   margin-left: auto;
   margin-right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .productsButton{
+    width: 40px;
+  }
+
+  .productsInput{
+    width: 40px;
+  }
 }
