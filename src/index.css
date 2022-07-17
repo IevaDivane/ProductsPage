@@ -10,13 +10,12 @@ body {
   border-radius: 8px;
   /*width: 1440px;*/
   /*height: 332px;*/
+  font-size: 12px;
+  line-height: 16px;
+  color: #FF3D00;
   font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
-}
 
 :root {
   --gutter-width: 1rem;

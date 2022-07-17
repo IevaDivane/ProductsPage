@@ -1,5 +1,5 @@
 .app{
-  background: white;
+  background:#FFFFFF;
   display: flex;
   padding: 48px 72px 100px 72px;
   gap: 24px;
@@ -30,8 +30,6 @@
   width: 90px;
   height: 20px;
   color: #FFFFFF;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
 }
 
@@ -40,8 +38,6 @@
   background-color: #FFF0E6;
   height: 20px;
   color: #FF6600;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
   padding: 2px 8px 2px 8px;
   display: flex;
@@ -56,10 +52,8 @@
 }
 
 .name{
-  color: #333333;
   font-size: 16px;
   line-height: 24px;
-  //width: 526px;
   text-align: left;
   padding-top: 8px;
   padding-bottom: 12px;
@@ -68,8 +62,6 @@
 
 .nameTag{
   color: #999999;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
   background-color: #EDF0F3;
   border-radius: 2px;
@@ -98,22 +90,15 @@
 
 .ratingBoxRating{
   color: #FF6600;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
 }
 
 .ratingBoxCount{
   color: #999999;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
 }
 
 .ratingBoxBuyers{
-  color: #333333;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
 }
 
@@ -154,7 +139,6 @@
   display: flex;
   color: #FF6600;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   gap: 24px;
 
@@ -200,7 +184,6 @@
 .countdownTimerDiscount{
   color: #FF6600;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   padding-right: 4px;
 }
@@ -214,7 +197,6 @@
 .countdownTimerExplanation{
   color: #999999;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
 }
 
@@ -244,15 +226,12 @@
 .tradeAssuranceBold{
   color: #999999;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   font-weight: bold;
 }
 
 .tradeAssuranceSmall{
   color: #999999;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
   padding-left: 5px;
 }
@@ -271,8 +250,6 @@
 
 .paymentsText{
   color: #999999;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
 }
 
@@ -285,8 +262,6 @@
   display: flex;
   gap: 24px;
   color: #999999;
-  font-size: 12px;
-  line-height: 16px;
   text-align: left;
 }
 
@@ -327,7 +302,6 @@
 }
 
 .addToBoxShippingCountryPrice{
-  color: #333333;
   font-size: 16px;
   line-height: 24px;
   text-align: right;
@@ -338,7 +312,6 @@
   display: grid;
   color: #999999;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   gap: 12px;
   margin-bottom: 24px;
@@ -364,7 +337,6 @@
   border: none;
   color: #FFFFFF;
   font-size: 14px;
-  line-height: 20px;
   text-align: center;
   &:hover{
     background-color: #FF3D00;
@@ -431,7 +403,6 @@
 .priceBoxSecondRow{
   color: #999999;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   text-decoration: line-through;
 }
@@ -447,30 +418,25 @@
 .priceBoxFirstRowOptionOrder{
   color: #999999;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
 }
 
 .priceBoxFirstRowOptionLine{
   color: #EDF0F3;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   padding-right: 6px;
   padding-left: 6px;
 }
 
 .priceBoxFirstRowOptions{
-  color: #333333;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
 }
 
 .productsHeader{
   color: #999999;
   font-size: 14px;
-  line-height: 16px;
   width: 112px;
   text-align: left;
   padding: 10px 0;
@@ -478,9 +444,7 @@
 }
 
 .productsLabel{
-  color: #333333;
   font-size: 14px;
-  line-height: 16px;
   width: 174px;
   text-align: left;
 }
@@ -489,26 +453,18 @@
   display: flex;
   padding-bottom: 12px;
   align-items: center;
-
 }
 
-
-
 .productsPrice{
-  color: #333333;
   font-size: 14px;
-  line-height: 16px;
   text-align: left;
   padding-right: 24px;
 }
-
-
 
 .productsInfoLabelPrice{
   display: flex;
   align-items: center;
 }
-
 
 @media only screen and (max-width: 360px) {
   body{
