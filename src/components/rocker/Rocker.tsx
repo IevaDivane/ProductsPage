@@ -17,7 +17,7 @@ const Rocker = () => {
       </button>
       <input
         type="number"
-        className={style.productsInput}
+        className={count === 0 ? style.productsInputGrey : style.productsInput}
         value={count}
         onChange={(e) => {
           setCount(Number(e.target.value));

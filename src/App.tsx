@@ -37,13 +37,6 @@ const App = () => {
     }
   };
 
-  // const starsField = (str:number) => {
-  //   const starsArray = [];
-  //   for (let i = 0; i < str; i + 1) {
-  //     starsArray.push(i);
-  //   } return starsArray;
-  // };
-
   const options = (products) && Object.values(products.options);
 
   const optionsPrice = options?.map((d) => d.price.value);
@@ -103,10 +96,11 @@ const App = () => {
 
     timerComponents.push(
       <span className={style.timeLast}>
+        :
         {/* @ts-ignore */}
         {timeLeft[interval]}
         {interval}
-        :
+
       </span>,
     );
   });
@@ -153,11 +147,6 @@ const App = () => {
               </div>
               <div className={style.ratingBox}>
                 <div className={style.ratingBoxStars}>
-                  {/* {starsField(Number(products.reviews.rating)).map((st:number) => ( */}
-                  {/*  <div> */}
-                  {/*    <img src={star} alt="star" /> */}
-                  {/*  </div> */}
-                  {/* ))} */}
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />
                   <img src={star} alt="star" />
@@ -237,7 +226,7 @@ const App = () => {
               </div>
               <div className={style.countdownTimerTime}>
                 <img src={timer} alt="timer" />
-                <span>
+                <span className={style.timeLastComponent}>
                   {' '}
                   {/* eslint-disable-next-line react/no-unescaped-entities */}
                   {timerComponents.length ? timerComponents : <span>Discount ended</span>}
