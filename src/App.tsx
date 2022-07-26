@@ -237,7 +237,6 @@ const App = () => {
               <div className={style.productsHeader}>
                 <span>Options:</span>
               </div>
-              {/* <Rocker options={options} /> */}
               <div className={style.productsList}>
                 {options && Object.keys(options).map((o:any) => (
                   <div key={o} className={style.productsInfo}>

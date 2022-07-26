@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import style from './Rocker.module.scss';
 
 const Rocker = () => {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div className={style.productsButtons}>
